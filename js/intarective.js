@@ -23,18 +23,18 @@ const clearValue = (id,value)=>{
     document.getElementById(id).value= value;
 
 }
-// const showData = (alldata)=>{
+const showData = (alldata)=>{
     
-//     const conditionUrl = `http://openweathermap.org/img/wn/${alldata.weather[0].icon}@2x.png`
-//     document.getElementById('weather-image').setAttribute('src',conditionUrl)
-//     clearValue('user-input','');
-//     console.log(alldata);
-//     setInnertext('city-Name',alldata.name)
-//     setInnertext('degree',alldata.main.temp)
-//     setInnertext('condition',alldata.weather[0].main)
+    const conditionUrl = `http://openweathermap.org/img/wn/${alldata.weather[0].icon}@2x.png`
+    document.getElementById('weather-image').setAttribute('src',conditionUrl)
+    clearValue('user-input','');
+    console.log(alldata);
+    setInnertext('city-Name',alldata.name)
+    setInnertext('degree',alldata.main.temp)
+    setInnertext('condition',alldata.weather[0].main)
 
     
     
 
 
-// }
+}
